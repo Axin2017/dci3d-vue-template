@@ -1,0 +1,59 @@
+.height100 {
+  height: 100%;
+}
+.abs-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.clear-fix::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+li:focus {
+  outline: none;
+}
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+ /*消除button的默认样式*/
+ button{
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+}
+/*禁止选中文本*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+}
+/*一行超出省略号*/
+.beyondEllipsis{
+  overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;/*超出部分文字以...显示*/
+}
+
+

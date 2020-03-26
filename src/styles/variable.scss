@@ -1,0 +1,68 @@
+
+/* main-color */
+
+$second-level-color:#FFFFFF;
+$second-level-fontSize: 16px;
+
+/* placeholder */
+
+$placeholder-color: #999999;
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &::-moz-input-placeholder {
+    color: $placeholder-color;
+  }
+  &::-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+}
+
+/* header */
+
+$header-backgroud-color: #00A6D6;
+
+/* aside */
+
+$aside-backgroud-color:#E0E9EC;
+$aside-color: #333333;
+
+/* asideOpen */
+$asideOpen-backgroud-color: #F3F4F6; 
+$asideOpen-title-color: #000000; 
+
+/* toolBar */
+$toolBar-backgroud-color: #F4F4F4;
+$toolBar-font-size: 14px;
+$toolBar-button-color: #0088B0;
+$toolBar-button-active-color: #ff7e00;
+
+.toolbar-item {
+  color: $toolBar-button-color;
+  margin-left: 40px;
+  cursor: pointer;
+  i {
+    margin-right: 3px;
+  }
+  &:active, &.actived {
+    color: #ff7e00;
+  }
+}
+
+.toolbar-item-fr {
+  @extend .toolbar-item;
+  margin-left: 0;
+  margin-right: 40px;
+  float: right;
+}
+
+.toolbar-item-fl {
+  @extend .toolbar-item;
+  float: left;
+}
+.toolbaractived{
+  color: #ff7e00;
+}
+/* map */
+$map-backgroud-color: #FFFFFF;
