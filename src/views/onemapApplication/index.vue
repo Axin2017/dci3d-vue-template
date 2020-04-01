@@ -14,8 +14,8 @@
       <div class="onemap-content" id="onemap-content">
         <!-- 地图与右侧面板 -->
         <ContentPage>
-          <div class="map" @click="mapClick">
-            this is map
+          <div class="map">
+            <Dci3dMap2D />
           </div>
         </ContentPage>
         <keep-alive>
@@ -29,10 +29,6 @@
 export default {
   name: 'OneMapApplication',
   methods: {
-    mapClick() {
-      // eslint-disable-next-line
-      alert('点击地图')
-    },
     onRouterChangeClick() {
       const router = this.$store.state.global.routerPath
       this.$router.push(router.indexOf('onemap1') >= 0 ? '/onemapApplication' : '/onemapApplication/onemap1')
@@ -65,7 +61,6 @@ export default {
       .map {
         background: #ccc;
         height: 100%;
-        line-height: 100px;
       }
     }
   }
